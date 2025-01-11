@@ -22,7 +22,19 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    angular,
+    dotnet,
+    postgre,
+    youssburger,
+    puzzle,
+    shoes,
+    tourist,
+    mataki,
+    shoesfigma,
+    silented,
+    github,
+    gabera,
+    zedpay
   } from "../assets";
   
   export const navLinks = [
@@ -44,6 +56,14 @@ import {
     {
       title: "Web Developer",
       icon: web,
+    },
+    {
+      title: "UI/UX Designer",
+      icon: backend,
+    },
+    {
+      title: "Angular Developer",
+      icon: backend,
     },
     {
       title: "React Native Developer",
@@ -77,91 +97,91 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Angular",
+      icon: angular,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
     {
+      name: ".NET",
+      icon: dotnet,
+    },
+    {
       name: "Node JS",
       icon: nodejs,
+    },
+    {
+      name: "PostgreSQL",
+      icon: postgre,
     },
     {
       name: "MongoDB",
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "figma",
+      icon: figma,
     },
     {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Front-End Developer",
+      company_name: "Gabera SOftware Solutions",
+      icon: gabera,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using HTML CSS JS, ASP .NET and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "MAUI Developer",
+      company_name: "Gabera SOftware Solutions",
+      icon: gabera,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using MAUI ASP .NET and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Angular Developer",
+      company_name: "Gabera SOftware Solutions",
+      icon: gabera,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Angular ASP.NET and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Angular Developer",
+      company_name: "Zedpay",
+      icon: zedpay,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications using Angular Tailwind CSS and Java and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -198,16 +218,17 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Youss Burger",
+      project: github,
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "Angular",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Material UI",
           color: "green-text-gradient",
         },
         {
@@ -215,20 +236,21 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: youssburger,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Shoes Marketplace",
+      project: github,
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
-          name: "react",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Talwind CSS",
           color: "green-text-gradient",
         },
         {
@@ -236,28 +258,85 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: shoes,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Puzzle Pharm",
+      project: github,
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "Angular",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Tailwind CSS",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "ASP .NET",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: puzzle,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Tourist Application",
+      project: figma,
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "Figma",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: tourist,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Mataki",
+      project: figma,
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "Figma",
+          color: "green-text-gradient",
+        },
+      ],
+      image: mataki,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Shoes Market ",
+      project: figma,
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "Figma",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: shoesfigma,
+      source_code_link: "https://github.com/",
+    },
+    {
+      name: "Silent education",
+      project: figma,
+      description:
+        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      tags: [
+        {
+          name: "Figma",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: silented,
       source_code_link: "https://github.com/",
     },
   ];

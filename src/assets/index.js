@@ -20,15 +20,28 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import angular from "./tech/angular.jpg";
+import dotnet from "./tech/dotnet.svg";
+import postgre from "./tech/postgesql.jpg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import gabera from "./company/gabera.png";
+import zedpay from "./company/zedpay.jpg"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import youssburger from "./youssburger.png";
+import shoes from './shoesmarket.png';
+import shoesfigma from './shoesfigma.png';
+import mataki from './mataki.png';
+import tourist from './tourist.png';
+import puzzle from './puzzle.png';
+import silented from './silented.png';
+
 
 export {
   logo,
@@ -59,4 +72,16 @@ export {
   carrent,
   jobit,
   tripguide,
+  angular,
+  dotnet,
+  postgre,
+  youssburger,
+  puzzle,
+  tourist,
+  mataki,
+  shoes,
+  shoesfigma,
+  silented,
+  zedpay,
+  gabera,
 };
