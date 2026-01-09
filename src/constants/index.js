@@ -187,6 +187,24 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    {
+      title: "Backend Developer (Spring Boot & Microservices)",
+      company_name: "Zedpay",
+      icon: zedpay,
+      iconBg: "#383E56",
+      date: "Jan 2024 - Present",
+      points: [
+        "Developing and evolving backend features using Spring Boot with reactive and semi-reactive architectures.",
+        "Designing and managing a microservices architecture with asynchronous communication using Kafka.",
+        "Modeling, optimizing, and maintaining relational databases with PostgreSQL.",
+        "Implementing authentication and authorization mechanisms using Keycloak, including role and permission management.",
+        "Containerizing and deploying backend services using Docker.",
+        "Collaborating closely with frontend teams to integrate Angular applications with backend APIs.",
+        "Writing unit and integration tests using Mockito to ensure code reliability and maintainability.",
+        "Actively participating in pull request reviews to maintain code quality and consistency across the codebase.",
+      ],
+    },
+
   ];
   
   const testimonials = [

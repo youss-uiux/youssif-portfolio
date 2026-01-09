@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
+import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -6,6 +7,28 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
+  useEffect(() => {
+    if (!computer?.scene) return;
+
+    computer.scene.traverse((child) => {
+      if (child.isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+
+        // Forcer un matériau éclairable
+        if (child.material) {
+          child.material = new THREE.MeshStandardMaterial({
+            map: child.material.map,
+            roughness: 0.5,
+            metalness: 0.2,
+          });
+        }
+      }
+    });
+  }, [computer]);
+
+
 
   return (
     <mesh>
@@ -16,7 +39,8 @@ const Computers = ({ isMobile }) => {
         penumbra={1}
         intensity={1}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
       />
       <pointLight intensity={1} />
       <primitive
@@ -55,12 +79,21 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
+      <ambientLight intensity={0.4} />
+      <directionalLight
+          position={[5, 10, 5]}
+          intensity={1.2}
+          castShadow
+          shadow-mapSize-width={1024}
+          shadow-mapSize-height={1024}
+      />
+      <pointLight position={[0, 5, 5]} intensity={0.8} />
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
