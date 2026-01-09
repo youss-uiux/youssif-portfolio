@@ -23,6 +23,10 @@ import threejs from "./tech/threejs.svg";
 import angular from "./tech/angular.jpg";
 import dotnet from "./tech/dotnet.svg";
 import postgre from "./tech/postgesql.jpg";
+import spring from "./tech/spring-1.png";
+import spring_1 from "./tech/spring.jpg";
+import spring_2 from "./tech/Spring-2.jpeg";
+import angular_grandient from "./tech/Angular_gradient_logo.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -84,4 +88,8 @@ export {
   silented,
   zedpay,
   gabera,
+  spring,
+  spring_1,
+  spring_2,
+  angular_grandient,
 };

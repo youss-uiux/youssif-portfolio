@@ -22,6 +22,10 @@ import {
     carrent,
     jobit,
     tripguide,
+    spring,
+    spring_1,
+    spring_2,
+    angular_grandient,
     angular,
     dotnet,
     postgre,
@@ -81,6 +85,22 @@ import {
   
   const technologies = [
     {
+      name: "Spring boot",
+      icon: spring_2,
+    },
+    {
+      name: ".NET",
+      icon: dotnet,
+    },
+    {
+      name: "Angular",
+      icon: angular_grandient,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -97,20 +117,8 @@ import {
       icon: typescript,
     },
     {
-      name: "Angular",
-      icon: angular,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
-    },
-    {
-      name: ".NET",
-      icon: dotnet,
     },
     {
       name: "Node JS",
