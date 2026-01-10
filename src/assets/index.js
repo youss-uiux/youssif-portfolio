@@ -45,6 +45,7 @@ import mataki from './mataki.png';
 import tourist from './tourist.png';
 import puzzle from './puzzle.png';
 import silented from './silented.png';
+import unn from './unn.png';
 
 
 export {
@@ -92,4 +93,5 @@ export {
   spring_1,
   spring_2,
   angular_grandient,
+  unn
 };

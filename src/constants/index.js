@@ -38,7 +38,8 @@ import {
     silented,
     github,
     gabera,
-    zedpay
+    zedpay,
+    unn
   } from "../assets";
   
   export const navLinks = [
@@ -244,10 +245,28 @@ import {
   
   const projects = [
     {
+      name: "Université Numérique de Niger",
+      project: github,
+      description:
+          "The Université Numérique de Niger website serves as the digital gateway to higher education in Niger. It showcases the country’s institutions, academic programs and training opportunities, latest news and announcements, and official documents and resources. Visitors can explore participating institutions, view program details and admission information, follow updates and events, and download official forms, regulations, and academic materials. The site aims to improve accessibility, transparency, and collaboration across Niger’s higher education landscape.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: unn,
+      source_code_link: "https://github.com/",
+    },
+    {
       name: "Youss Burger",
       project: github,
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+          "Web-based platform that lets users browse a fast-food menu, customize items, place pickup or delivery orders, track order status in real-time, and pay securely.",
       tags: [
         {
           name: "Angular",
@@ -269,7 +288,7 @@ import {
       name: "Shoes Marketplace",
       project: github,
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A modern e-commerce app for ordering shoes that lets users browse a curated catalog, filter by size, brand, color, and price, and view high‑resolution images and 360° previews. Customers can add items to a cart, choose delivery or pickup, pay with multiple payment methods, track orders in real time, save favorites to a wishlist, and request easy returns or exchanges. The app also supports size recommendations, personalized promotions, and an admin dashboard for inventory, orders, and analytics.",
       tags: [
         {
           name: "HTML",
@@ -291,7 +310,7 @@ import {
       name: "Puzzle Pharm",
       project: github,
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+          "A pharmacy management and online medicine discovery platform that enables users to search for, compare, and order medications from local pharmacies, manage prescriptions, and check real-time product availability and details.",
       tags: [
         {
           name: "Angular",
@@ -313,7 +332,13 @@ import {
       name: "Tourist Application",
       project: figma,
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A modern travel app that helps users discover and book hotels and find local events to attend. Main capabilities:\n" +
+          "\\- Discover and compare hotels by location, price, rating, amenities, and availability.\n" +
+          "\\- Browse events by category, date and map; view details, schedules and organizer info.\n" +
+          "\\- Reserve rooms and register\\/buy event tickets with secure payment and confirmation.\n" +
+          "\\- Personalized recommendations, wishlists, and booking history.\n" +
+          "\\- Maps, directions, calendar sync and push notifications for reminders and updates.\n" +
+          "\\- User profiles, ratings, reviews and social sharing.",
       tags: [
         {
           name: "Figma",
@@ -327,7 +352,7 @@ import {
       name: "Mataki",
       project: figma,
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+          "A prototype application for combating climate change: it offers concrete actions to adopt (transport, food, energy, consumption), personalized plans, community challenges, progress tracking, and educational resources to reduce CO2 emissions.",
       tags: [
         {
           name: "Figma",
@@ -341,7 +366,7 @@ import {
       name: "Shoes Market ",
       project: figma,
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A modern, responsive e-commerce web application for selling shoes. It features a clean product catalog with high-resolution images, advanced filtering and search, secure checkout and multiple payment options, user accounts with order history and wishlists, product reviews and ratings, and an admin dashboard for inventory, orders, and analytics. Designed for fast performance and a seamless user experience on both mobile and desktop.",
       tags: [
         {
           name: "Figma",
@@ -355,7 +380,7 @@ import {
       name: "Silent education",
       project: figma,
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+          "A mobile educational app designed for deaf and hard-of-hearing learners. It delivers sign-language video lessons with synchronized captions and transcripts, gesture-based navigation, interactive visual exercises, offline lesson downloads, real-time speech-to-text for live sessions, and teacher tools to create accessible sign-friendly content.",
       tags: [
         {
           name: "Figma",
