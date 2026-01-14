@@ -32,21 +32,21 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={isMobile ? 0.5 : 0.15} groundColor='black' />
+      <hemisphereLight intensity={isMobile ? 1 : 0.15} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={isMobile ? 1.5 : 1}
+        intensity={isMobile ? 2 : 1}
         castShadow
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
       />
-      <pointLight intensity={isMobile ? 1.5 : 1} />
+      <pointLight intensity={isMobile ? 2 : 1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.6 : 0.75}
-        position={isMobile ? [0, -2.5, -2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.55 : 0.75}
+        position={isMobile ? [0, -2, -1.5] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -82,19 +82,24 @@ const ComputersCanvas = () => {
       frameloop='always'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: isMobile ? 35 : 25 }}
+      camera={{ position: [20, 3, 5], fov: isMobile ? 40 : 25 }}
       gl={{ preserveDrawingBuffer: true }}
-      style={{ width: '100%', height: '100%' }}
+      style={{
+        width: '100%',
+        height: '100%',
+        display: 'block',
+        touchAction: 'none'
+      }}
     >
-      <ambientLight intensity={0.4} />
+      <ambientLight intensity={isMobile ? 1 : 0.4} />
       <directionalLight
           position={[5, 10, 5]}
-          intensity={1.2}
+          intensity={isMobile ? 2 : 1.2}
           castShadow
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
       />
-      <pointLight position={[0, 5, 5]} intensity={0.8} />
+      <pointLight position={[0, 5, 5]} intensity={isMobile ? 1.5 : 0.8} />
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
