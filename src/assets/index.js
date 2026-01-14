@@ -47,6 +47,10 @@ import puzzle from './puzzle.png';
 import silented from './silented.png';
 import unn from './unn.png';
 
+import ahmad from './ahmad.jpg';
+import issaka from './issaka.jpeg';
+import ouaraqua from './ouaraqua.jpeg';
+
 
 export {
   logo,
@@ -93,5 +97,8 @@ export {
   spring_1,
   spring_2,
   angular_grandient,
-  unn
+  unn,
+  ahmad,
+  issaka,
+  ouaraqua,
 };
