@@ -19,13 +19,25 @@ const ProjectCard = ({
 }) => {
     const [isMobile, setIsMobile] = useState(false);
     useEffect(() => {
+        if (typeof window === "undefined") return;
+
         const mediaQuery = window.matchMedia("(max-width: 640px)");
+        const handler = (e) => setIsMobile(e.matches);
+
+        // état initial
         setIsMobile(mediaQuery.matches);
 
-        const handler = (e) => setIsMobile(e.matches);
-        mediaQuery.addEventListener("change", handler);
+        // ajout avec fallback pour navigateurs plus anciens
+        if (typeof mediaQuery.addEventListener === "function") {
+            mediaQuery.addEventListener("change", handler);
+            return () => mediaQuery.removeEventListener("change", handler);
+        } else if (typeof mediaQuery.addListener === "function") {
+            mediaQuery.addListener(handler);
+            return () => mediaQuery.removeListener(handler);
+        }
 
-        return () => mediaQuery.removeEventListener("change", handler);
+        // pas de listener disponible
+        return undefined;
     }, []);
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
