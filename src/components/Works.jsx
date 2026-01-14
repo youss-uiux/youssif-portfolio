@@ -40,7 +40,11 @@ const ProjectCard = ({
         return undefined;
     }, []);
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+        variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+        initial="hidden"
+        animate="show"
+        viewport={{ once: true, amount: 0.25 }}>
         {isMobile ? (
             <div className="bg-tertiary p-5 rounded-2xl w-full">
                 <div className='relative w-full h-[230px]'>
